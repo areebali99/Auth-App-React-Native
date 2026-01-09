@@ -82,6 +82,9 @@ const SignupScreen = ({ navigation }) => {
                             <Ionicons name={isPasswordVisible ? "eye-off" : "eye"} size={24} color="gray" />
                         </TouchableOpacity>
                     </View>
+                    <Text style={{ fontSize: 12, color: '#666', marginTop: 4, marginLeft: 4 }}>
+                        * Password must be at least 6 characters long
+                    </Text>
                 </View>
 
                 {error ? <Text style={globalStyles.errorText}>{error}</Text> : null}
